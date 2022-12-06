@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Fork Me! FCC: Test Suite Template</title>
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
+	<link rel="stylesheet" href="css/style.css">
 
-	<body>
-		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-		<h1>Hello World, we are software developers!</h1>
-		<!--
+<h1 id="title">Survey</h1>
+<p id="description"> the description goes here!</p>
+<form id="survey-form">
+<label id= "name-label"> Name: <input id="name" type="text" placeholder="Enter your name"></input></label><br>
+<label id= "email-label"> Email: <input id="email" type="email" placeholder="Enter your email"></input></label><br>
+<label id= "number-label"> Number: <input id="number" type="number" min= "18" max="100000000" placeholder="Enter your age"></input></label><br>
+<label>Choose your actual role:</label><br>
+<select id="dropdown">
+  <option value="">--Please choose an option--</option>
+    <option value="employed">Employed</option>
+    <option value="unemployed">Unemployed</option>
+</select><br>
 
-    Hello Camper!
+<label>Are you single?</label><br>
+<input type="radio" id="yes" name="state" value="yes">
+<label>Yes</label><br>
+<div>
+<input type="radio" id="no" name="state" value="no">
+<label>No</label><br>
+</div>
+<label>What would you like to improve in microverse?</label><br>
+<label><input type="checkbox" id="english" value="english"> English</label><br>
+<label><input type="checkbox" id="html" value="html"> HTML/CSS</label><br>
+<label><input type="checkbox" id="javascript" value="javascript"> Javascript</label><br>
+<label><input type="checkbox" id="soft" value="soft"> Soft skills</label><br>
+<p>
+<label>In this area you can write any recomendation to improve our survey!</label><br>
+<textarea name="textarea" rows="5" cols="40">Write your feedback here...</textarea><br>
+</p>
+<p>
+<input type="submit" id="submit" value= "submit"> </input>
+</p>
+</form>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
 
-    - The freeCodeCamp Team
-
-    -->
-
-		<script src="js/index.js"></script>
-	</body>
 </html>
