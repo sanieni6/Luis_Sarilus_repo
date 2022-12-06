@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="css/style.css">
 
-<h1 id="title">Survey</h1>
-<p id="description"> the description goes here!</p>
-<form id="survey-form">
-<label id= "name-label"> Name: <input id="name" type="text" placeholder="Enter your name"></input></label><br>
-<label id= "email-label"> Email: <input id="email" type="email" placeholder="Enter your email"></input></label><br>
-<label id= "number-label"> Number: <input id="number" type="number" min= "18" max="100000000" placeholder="Enter your age"></input></label><br>
-<label>Choose your actual role:</label><br>
-<select id="dropdown">
-  <option value="">--Please choose an option--</option>
-    <option value="employed">Employed</option>
-    <option value="unemployed">Unemployed</option>
-</select><br>
-
-<label>Are you single?</label><br>
-<input type="radio" id="yes" name="state" value="yes">
-<label>Yes</label><br>
-<div>
-<input type="radio" id="no" name="state" value="no">
-<label>No</label><br>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Survey form</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<div class="title-section">
+  <h1 id="title">Microverse Survey </h1>
+  <p id="description">the description goes here!</p>
 </div>
-<label>What would you like to improve in microverse?</label><br>
-<label><input type="checkbox" id="english" value="english"> English</label><br>
-<label><input type="checkbox" id="html" value="html"> HTML/CSS</label><br>
-<label><input type="checkbox" id="javascript" value="javascript"> Javascript</label><br>
-<label><input type="checkbox" id="soft" value="soft"> Soft skills</label><br>
-<p>
-<label>In this area you can write any recomendation to improve our survey!</label><br>
-<textarea name="textarea" rows="5" cols="40">Write your feedback here...</textarea><br>
-</p>
-<p>
-<input type="submit" id="submit" value= "submit"> </input>
-</p>
-</form>
 
+<section class="section-form">
+  <form id="survey-form">
+
+    <label for="name">
+      Name:
+      <input id="name" type="text" placeholder="Enter your name" /> </label><br />
+
+    <label for="email">
+      Email:
+      <input id="email" type="email" placeholder="Enter your email" /></label><br />
+
+    <label for="number">
+      Number:
+      <input id="number" type="number" min="18" max="100000000" placeholder="Enter your age" /></label><br />
+
+    <label for="role">Choose your actual role:</label><br />
+    <select id="role" name="role">
+      <option value="">--Please choose an option--</option>
+      <option value="employed">Employed</option>
+      <option value="unemployed">Unemployed</option>
+    </select><br />
+
+    <label>Are you single?</label><br />
+    <input type="radio" id="yes" name="state" value="yes" />
+    <label>Yes</label><br />
+    <input type="radio" id="no" name="state" value="no" />
+    <label>No</label><br />
+
+    <label>What would you like to improve in microverse?</label><br />
+    <label><input type="checkbox" id="english" value="english" /> English</label><br />
+    <label><input type="checkbox" id="html" value="html" /> HTML/CSS</label><br />
+    <label><input type="checkbox" id="javascript" value="javascript" />
+      Javascript</label><br />
+    <label><input type="checkbox" id="soft" value="soft" /> Soft skills</label><br />
+    <p>
+      <label>In this area you can write any recomendation to improve our
+        survey!</label><br />
+      <textarea name="textarea" rows="5" cols="40">
+        Write your feedback here...</textarea><br />
+    </p>
+    <p>
+      <input type="submit" id="submit" value="submit" />
+    </p>
+  </form>
+</section>
 
 </html>

@@ -1,40 +1,50 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
 body{
-    background-color: aqua;
+    
     font-family: arial;
   }
   
-  #title{
-    color: blue;
-    display: inline;
-    font-family: arial;
-    font-size-adjust: 20;
-    text-align: center;
+  .title-section{
+    text-align:center;
   }
-  #description{
-    font-family: arial;
+
+  .title-section h1{
+    font-size: 3rem;
+    margin:5px 0;
   }
-  #name-label{
-    font-family: arial;
-  }
-  #email-label{
-    font-family: arial;
-  }
-  #number-label{
-    font-family: arial;
-  }
-  #role{
-    font-family: arial;
-  }
-  #state{
-    font-family: arial;
-  }
-  #yes{
-    font-family: arial;
-  }
-  #no{
-    font-family: arial;
-    
-  }
-  #improve{
-    font-family: arial;
-  }
+
+    .title-section p {
+      font-size: 2rem;
+      margin: 0 5px;
+    }
+
+
+
+.section-form{
+  margin: 0 auto;
+  width: 70%;
+  position: relative;
+}
+
+.section-form form{
+  padding: 30px;
+}
+.section-form::before{
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #6070ff;
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url("images/bg-shape-mob.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form
