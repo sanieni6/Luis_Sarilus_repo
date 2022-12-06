@@ -1,0 +1,40 @@
+body{
+    background-color: aqua;
+    font-family: arial;
+  }
+  
+  #title{
+    color: blue;
+    display: inline;
+    font-family: arial;
+    font-size-adjust: 20;
+    text-align: center;
+  }
+  #description{
+    font-family: arial;
+  }
+  #name-label{
+    font-family: arial;
+  }
+  #email-label{
+    font-family: arial;
+  }
+  #number-label{
+    font-family: arial;
+  }
+  #role{
+    font-family: arial;
+  }
+  #state{
+    font-family: arial;
+  }
+  #yes{
+    font-family: arial;
+  }
+  #no{
+    font-family: arial;
+    
+  }
+  #improve{
+    font-family: arial;
+  }
